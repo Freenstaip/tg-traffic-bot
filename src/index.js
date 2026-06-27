@@ -91,7 +91,7 @@ function siteButton(env, token) {
   return {
     inline_keyboard: [[
       {
-        text: "Перейти на сайт",
+        text: "START ✅",
         url: `${cleanBaseUrl(env.WORKER_URL)}/go/${token}`
       }
     ]]
