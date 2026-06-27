@@ -1,1 +1,8 @@
+name = "tg-traffic-bot"
+main = "src/index.js"
+compatibility_date = "2026-06-26"
 
+[[d1_databases]]
+binding = "DB"
+database_name = "tg_traffic_bot"
+database_id = "PASTE_DATABASE_ID_HERE"
