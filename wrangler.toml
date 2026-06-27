@@ -6,7 +6,7 @@ compatibility_date = "2026-06-26"
 BOT_TOKEN = "8740597671:AAFS_egoKxXHM3HcX_ilmFuzTdsEv7ahFFk"
 ADMIN_ID = "5947697192"
 SITE_URL = "https://vk.com"
-WORKER_URL = "https://tg-traffic-bot.freenstaip5.workers.dev"
+WORKER_URL = "https://minesdollar.site"
 
 [[d1_databases]]
 binding = "DB"
