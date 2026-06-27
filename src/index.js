@@ -1,4 +1,13 @@
-const TEXT_START = "Привет! Нажмите кнопку ниже, чтобы перейти на сайт.";
+const TEXT_START = "Hi! 👋
+
+Tap the button below to visit the website, create your account, and start playing! 👇
+
+✅ Fast Registration
+✅ Instant Withdrawals
+✅ Daily Bonuses
+✅ Free Bonus
+
+Good luck and big wins! 🍀";
 const TEXT_PUSH = "Напоминаем: перейдите на сайт и завершите действие 👇";
 
 let schemaReadyPromise = null;
