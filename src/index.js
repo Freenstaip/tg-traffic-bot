@@ -1,4 +1,4 @@
-const TEXT_START = "Hi! 👋
+const TEXT_START = `Hi! 👋
 
 Tap the button below to visit the website, create your account, and start playing! 👇
 
@@ -7,7 +7,7 @@ Tap the button below to visit the website, create your account, and start playin
 ✅ Daily Bonuses
 ✅ Free Bonus
 
-Good luck and big wins! 🍀";
+Good luck and big wins! 🍀`;
 const TEXT_PUSH = "Напоминаем: перейдите на сайт и завершите действие 👇";
 
 let schemaReadyPromise = null;
