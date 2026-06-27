@@ -61,6 +61,23 @@ async function tg(env, method, payload) {
   });
 }
 
+async function sendTextOrPhoto(env, chatId, text, replyMarkup) {
+  if (env.START_IMAGE) {
+    return tg(env, "sendPhoto", {
+      chat_id: chatId,
+      photo: env.START_IMAGE,
+      caption: text,
+      reply_markup: replyMarkup,
+    });
+  }
+
+  return tg(env, "sendMessage", {
+    chat_id: chatId,
+    text,
+    reply_markup: replyMarkup,
+  });
+}
+
 function siteButton(env, token) {
   return {
     inline_keyboard: [[
@@ -128,11 +145,12 @@ async function handleStart(env, message) {
   const user = message.from;
   const token = await saveUser(env, user);
 
-  await tg(env, "sendMessage", {
-    chat_id: message.chat.id,
-    text: TEXT_START,
-    reply_markup: siteButton(env, token),
-  });
+  await sendTextOrPhoto(
+    env,
+    message.chat.id,
+    TEXT_START,
+    siteButton(env, token)
+  );
 }
 
 async function handleAdmin(env, message) {
@@ -182,11 +200,12 @@ async function handlePush(env, callbackQuery) {
     try {
       const token = user.token || await getOrCreateToken(env, user.user_id);
 
-      await tg(env, "sendMessage", {
-        chat_id: user.user_id,
-        text: TEXT_PUSH,
-        reply_markup: siteButton(env, token),
-      });
+      await sendTextOrPhoto(
+        env,
+        user.user_id,
+        TEXT_PUSH,
+        siteButton(env, token)
+      );
 
       sent++;
     } catch (e) {}
