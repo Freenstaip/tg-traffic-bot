@@ -37,12 +37,9 @@ async function ensureSchema(env) {
     )
   `).run();
 
-  // Для старой базы, где таблица users уже была создана без token.
   try {
     await env.DB.prepare("ALTER TABLE users ADD COLUMN token TEXT").run();
-  } catch (e) {
-    // Колонка уже есть — это нормально.
-  }
+  } catch (e) {}
 }
 
 async function ensureSchemaOnce(env) {
