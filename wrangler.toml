@@ -5,4 +5,4 @@ compatibility_date = "2026-06-26"
 [[d1_databases]]
 binding = "DB"
 database_name = "tg_traffic_bot"
-database_id = "PASTE_DATABASE_ID_HERE"
+database_id = "94f27ed3-ca8f-4775-8689-3261af16ea68"
