@@ -2,6 +2,12 @@ name = "tg-traffic-bot"
 main = "src/index.js"
 compatibility_date = "2026-06-26"
 
+[vars]
+BOT_TOKEN = "ВАШ_ТОКЕН_БОТА"
+ADMIN_ID = "ВАШ_TELEGRAM_ID"
+SITE_URL = "https://ваш-сайт.com"
+WORKER_URL = "https://tg-traffic-bot.ВАШ-АККАУНТ.workers.dev"
+
 [[d1_databases]]
 binding = "DB"
 database_name = "tg_traffic_bot"
