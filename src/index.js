@@ -79,7 +79,7 @@ function siteButton(env, token) {
   return {
     inline_keyboard: [[
       {
-        text: "START ✅",
+        text: "GET 10$ ON REGISTRATION ✅",
         url: `${cleanBaseUrl(env.WORKER_URL)}/go/${token}`
       }
     ]]
