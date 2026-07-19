@@ -1,5 +1,5 @@
 const TEXT_START = 'Hi! 👋\n\nTap the button below to visit the website, create your account, and start earn! 👇\n\n✅ Fast Registration\n✅ Instant Withdrawals\n✅ Daily Bonuses\n✅ Free Bonus\n\nGood luck and big wins! 🍀';
-const TEXT_PUSH = "Напоминаем: перейдите на сайт и завершите действие 👇";
+const TEXT_PUSH = "Ты забыл зарегистрироваться, регестрируйся и начинай зарабатывать вместе с нами 👇";
 
 let schemaReadyPromise = null;
 
